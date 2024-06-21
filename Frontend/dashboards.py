@@ -15,46 +15,46 @@ def new_user():
     return df
 
 def distribution():
-    df = pd.read_csv("data_pipeline/ETHAmountDistributionStarkNet.csv")
+    df = pd.read_csv("Frontend/data_pipeline/ETHAmountDistributionStarkNet.csv")
     df['frequency'] = pd.to_numeric(df.frequency, errors='coerce')
     return df
 
 def clamis():
-    df = pd.read_csv("data_pipeline/QmNSh6cP52MEmA4hPZZ5WdKsr8uwY4JGdeP6qi3RmCZpqA.csv")
+    df = pd.read_csv("Frontend/data_pipeline/QmNSh6cP52MEmA4hPZZ5WdKsr8uwY4JGdeP6qi3RmCZpqA.csv")
     df['cumulative_claims'] = pd.to_numeric(df.cumulative_claims, errors='coerce')
     df['claims'] = pd.to_numeric(df.claims, errors='coerce')
     return df
 
 def rolling_sum_eth():
-    df = pd.read_csv("data_pipeline/RollingsumofETHdepositedintoStarknetfromEthereumbyday.csv")
+    df = pd.read_csv("Frontend/data_pipeline/RollingsumofETHdepositedintoStarknetfromEthereumbyday.csv")
     df['rolling_sum'] = pd.to_numeric(df.rolling_sum, errors='coerce')
     return df
 
 def rolling_sum():
-    df = pd.read_csv("data_pipeline/RollingSumOfNewAddressesInteractiveWithStarknetFromEthernumbyday.csv")
+    df = pd.read_csv("Frontend/data_pipeline/RollingSumOfNewAddressesInteractiveWithStarknetFromEthernumbyday.csv")
     df['rolling_sum'] = pd.to_numeric(df.rolling_sum, errors='coerce')
     return df
 
 def montly_new_user():
-    df = pd.read_csv("data_pipeline/MonthlyNewUsers.csv")
+    df = pd.read_csv("Frontend/data_pipeline/MonthlyNewUsers.csv")
     df['starknet_user_count'] = pd.to_numeric(df.starknet_user_count, errors='coerce')
     return df
 
 def zk_vs_stack():
-    df = pd.read_csv("data_pipeline/StarknetzkSyncTransactionCount.csv")
+    df = pd.read_csv("Frontend/data_pipeline/StarknetzkSyncTransactionCount.csv")
     df['deposit_amount_usd'] = pd.to_numeric(df.deposit_amount_usd, errors='coerce')
     df['balance_amount_usd'] = pd.to_numeric(df.balance_amount_usd, errors='coerce')
     return df
 
 def active_users():
-    df = pd.read_csv("/mount/src/starkenvision/Frontend/data_pipeline/DailyActiveUsers.csv")
+    df = pd.read_csv("Frontend/data_pipeline/DailyActiveUsers.csv")
     df['starknet_tx_count'] = pd.to_numeric(df.starknet_tx_count, errors='coerce')
     df['starknet_bridged_amount_usd'] = pd.to_numeric(df.starknet_bridged_amount_usd, errors='coerce')
     df['starknet_balance_amount_usd'] = pd.to_numeric(df.starknet_balance_amount_usd, errors='coerce')
     return df
 
 def monthly_active_users():
-    df = pd.read_csv("data_pipeline/MonthlyActiveUsers.csv")
+    df = pd.read_csv("Frontend/data_pipeline/MonthlyActiveUsers.csv")
     df['starknet_tx_count'] = pd.to_numeric(df.starknet_tx_count, errors='coerce')
     df['starknet_bridged_amount_usd'] = pd.to_numeric(df.starknet_bridged_amount_usd, errors='coerce')
     df['starknet_balance_amount_usd'] = pd.to_numeric(df.starknet_balance_amount_usd, errors='coerce')
