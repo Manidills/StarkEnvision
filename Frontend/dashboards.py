@@ -46,7 +46,7 @@ def zk_vs_stack():
     return df
 
 def active_users():
-    df = pd.read_csv("data_pipeline/DailyActiveUsers.csv")
+    df = pd.read_csv("/data_pipeline/DailyActiveUsers.csv")
     df['starknet_tx_count'] = pd.to_numeric(df.starknet_tx_count, errors='coerce')
     df['starknet_bridged_amount_usd'] = pd.to_numeric(df.starknet_bridged_amount_usd, errors='coerce')
     df['starknet_balance_amount_usd'] = pd.to_numeric(df.starknet_balance_amount_usd, errors='coerce')
