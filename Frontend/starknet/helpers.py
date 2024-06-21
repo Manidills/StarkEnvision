@@ -8,10 +8,7 @@ from starknet_py.contract import Contract
 from starknet_py.hash.selector import get_selector_from_name
 from starknet_py.net.client_models import Call
 
-from dotenv import find_dotenv, load_dotenv
-from typing import List, Dict,Iterable
 
-load_dotenv(find_dotenv())
 
 
 # source: https://doc.avnu.fi/developer-resources/contracts-and-audit
