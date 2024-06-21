@@ -67,6 +67,7 @@ def dash():
         ### Starknet_Bridged_Amount_Usd ###
         """)
     current_file_path = os.path.abspath(__file__)
+    print(current_file_path)
 
     # Display the current file path in the Streamlit app
     st.write(f"The current file path is: {current_file_path}")
