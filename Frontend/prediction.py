@@ -8,9 +8,7 @@ import torch.optim as optim
 from sklearn.preprocessing import MinMaxScaler
 from torch.utils.data import DataLoader, TensorDataset
 import streamlit as st
-import pandas_datareader as web
 import matplotlib.pyplot as plt
-import mplfinance as mpf
 import datetime as dt
 import altair as alt
 
