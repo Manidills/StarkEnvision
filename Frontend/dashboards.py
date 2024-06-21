@@ -10,7 +10,7 @@ import os
 
 
 def new_user():
-    df = pd.read_csv("/data_pipeline/DailyNewUsers.csv")
+    df = pd.read_csv("Frontend/data_pipeline/DailyNewUsers.csv")
     df['starknet_user_count'] = pd.to_numeric(df.starknet_user_count, errors='coerce')
     return df
 
