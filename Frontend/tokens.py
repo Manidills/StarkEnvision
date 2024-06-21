@@ -23,13 +23,13 @@ def tokens():
 
     if attribute == 'holders':
         if type_ == 'erc20':
-            data = pd.read_csv('data_pipeline/tokens_erc20.csv')
+            data = pd.read_csv('Frontend/data_pipeline/tokens_erc20.csv')
             data['Holders'] = pd.to_numeric(data['Holders'])
         elif type_ == 'erc721':
-            data = pd.read_csv('data_pipeline/tokens_erc721.csv')
+            data = pd.read_csv('Frontend/data_pipeline/tokens_erc721.csv')
             data['Holders'] = pd.to_numeric(data['Holders'])
         else:
-            data = pd.read_csv('data_pipeline/tokens_erc1155.csv')
+            data = pd.read_csv('Frontend/data_pipeline/tokens_erc1155.csv')
             data['Holders'] = pd.to_numeric(data['Holders'])
         
 
