@@ -6,6 +6,7 @@ import plotly.express as px
 import datetime
 import altair as alt
 import time
+import os
 
 
 def new_user():
@@ -65,6 +66,10 @@ def dash():
     st.write("""
         ### Starknet_Bridged_Amount_Usd ###
         """)
+    current_file_path = os.path.abspath(__file__)
+
+    # Display the current file path in the Streamlit app
+    st.write(f"The current file path is: {current_file_path}")
     st.markdown("##")
     st.altair_chart(
         alt.Chart(active_users()).mark_line(color='blue').encode(
