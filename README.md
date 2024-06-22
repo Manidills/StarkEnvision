@@ -1,6 +1,6 @@
-# StarkNet Analytics Explorer
+# StarkEnvision
 
-Welcome to the StarkNet Analytics Explorer project! This tool is designed to provide advanced analytical insights for StarkNet using the Voyager API. By leveraging a comprehensive range of APIs from Voyager, our platform offers deep and actionable insights into StarkNet data.
+Unlock the full potential of StarkNet with our innovative solutions, featuring real-time Pipeline Integrated Data Dashboards and customizable visualizations for comprehensive data insights. Enhance your trading strategies with AI-driven predictive models and secure DMAIL integration for timely, personalized updates. Dive deep into StarkNet data with advanced interactive analytics, offering in-depth analyses, custom reports, and collaboration features. Revolutionize your decision-making process on StarkNet with our cutting-edge tools and with the help of **voyager APIs**.
 
 
 ## Problem Statement
@@ -9,39 +9,42 @@ With the rapid growth of StarkNet, there's an increasing need for robust analyti
 ## Solution
 The StarkNet Analytics Explorer addresses these challenges by offering:
 
-- **Advanced Analytical Explorer**: A powerful tool for in-depth analysis of StarkNet data.
-- **Price Predictive Analysis**: Utilizing cutting-edge deep learning models to forecast price trends.
-- **Data Pipeline**: Seamlessly integrates data from the Voyager API, followed by rigorous data cleanup and preprocessing into CSV files for consistent and reliable analysis across the platform.
-- **Auto Buy and Sell**`[premium user]`: Automated trading feature for subscribed users based on predictive analysis.
+- **Pipeline Integrated Data Dashboards**: A powerful tool for in-depth dashboards of StarkNet data.
+- **Predictive Trading with AI Models (Subscription-based, DMAIL Integrated)**: Utilizing cutting-edge deep learning models to forecast price trends.
+- **Advanced Interactive Analytics for StarkNet Data**: Interactive analytics with reports.
 
 ## Features
 
-### Advanced Analytical Explorer
-- **Comprehensive Data Visualization**: Visualize StarkNet data through a variety of charts, graphs, and dashboards to understand trends and patterns.
-- **Customizable Queries**: Perform custom queries on the dataset to extract specific insights tailored to your needs.
-- **User-Friendly Interface**: Easy-to-use interface that allows both technical and non-technical users to explore data effortlessly.
+### 1. Pipeline Integrated Data Dashboards
+- **Real-time Data Monitoring**: Dashboards that update in real-time, providing users with the latest blockchain data.
+- **User-friendly Interface**: Intuitive and easy-to-navigate interface for users to interact with complex data sets.
+- **Customizable Views**: Ability for users to customize their dashboards according to their needs, allowing them to focus on the most relevant data.
+- **Integrated Data Sources**: Aggregates data from various sources within the StarkNet ecosystem for a comprehensive view.
+- **Data Visualization**: Utilizes charts, graphs, and other visual tools to make data analysis more accessible.
+- **Alerts and Notifications**: Set up alerts for specific events or thresholds, ensuring users are immediately informed of critical changes.
 
-### Price Predictive Analysis
-- **Deep Learning Models**: Implement sophisticated deep learning models to predict future price movements of assets on StarkNet.
-- **Historical Data Analysis**: Utilize historical data to train models and improve prediction accuracy.
-- **Real-Time Predictions**: Get real-time price predictions to make informed trading and investment decisions.
+### 2. Predictive Trading with AI Models (Subscription-based, DMAIL Integrated)
+- **Advanced AI Algorithms**: Utilizes machine learning models to predict market trends and trading opportunities on StarkNet.
+- **Subscription Model**: Users can subscribe to receive predictive trading signals, strategies, and insights.
+- **DMAIL Integration**: Secure and private email communication system for sending trading signals and updates to subscribers.
+- **Risk Management Tools**: Includes AI-driven risk assessment and management features to help traders minimize potential losses.
+- **Performance Analytics**: Track and analyze the performance of AI-generated trading signals to ensure effectiveness and reliability.
+- **Continuous Learning**: AI models continuously learn and improve from new data, enhancing prediction accuracy over time.
+- **Avnu-fi**: Avnu-Fi market integrated for swaping the crypto and curreny pair based on prediction.
 
-### Auto Buy and Sell (For premium Users)
-- **Automated Trading**: Automatically execute buy and sell orders based on predictive analysis to maximize profits and minimize risks.
-- **Customizable Trading Parameters**: Users can set their own trading parameters and thresholds, including risk tolerance, investment amount, and target prices. This customization allows users to tailor the automated trading strategy to their specific needs and preferences.
-- **Risk Management**: The system includes risk management features such as stop-loss and take-profit orders to protect users' investments.
-- **Performance Monitoring**: Subscribed users can monitor the performance of the automated trades in real-time, with detailed analytics and reporting on trade outcomes.
-- **Notifications and Alerts**: Users receive notifications and alerts about trade executions, market conditions, and significant changes in predictive models.
-- **Subscription-Based Access**: This advanced trading feature is available exclusively to subscribed users, providing them with enhanced capabilities and potential for higher returns.
+### 3. Advanced Interactive Analytics for StarkNet Data
+- **In-depth Data Analysis**: Tools for performing detailed analyses of transactions, smart contracts, and other blockchain activities.
+- **Interactive Exploration**: Users can interact with data points, drill down into details, and explore relationships within the data.
+- **Custom Reports**: Ability to generate custom reports based on specific queries and data sets.
+- **Data Correlation Tools**: Identify and analyze correlations between different data sets to uncover hidden patterns and insights.
+- **Historical Data Access**: Access to historical data for trend analysis and long-term planning.
+- **Collaboration Features**: Share insights, dashboards, and reports with team members for collaborative analysis.
 
-### Data Pipeline
-- **Voyager API Integration**: Integrate all available Voyager APIs (excluding the Blocks API) to fetch comprehensive StarkNet data, including transactions, contracts, and events.
-- **Data Cleanup and Preprocessing**: Perform thorough data cleaning and preprocessing to ensure high-quality data is used across the platform.
-- **CSV Conversion**: Convert processed data into CSV files, enabling seamless data handling and integration with various analytical tools.
 
 ## Architecture
 
-### Overview
+![Alt text](https://i.postimg.cc/Jz4sQ7yL/ARCH-new.png)
+
 The StarkNet Analytics Explorer architecture is designed to ensure efficient data retrieval, processing, and analysis. Below is a high-level overview of the architecture components:
 - **Data Retrieval Module**: Interacts with the Voyager API to fetch data from various endpoints (excluding the Blocks API).
 - **Data Preprocessing Module**: Cleans and preprocesses the retrieved data, converting it into CSV format.
@@ -52,18 +55,47 @@ The StarkNet Analytics Explorer architecture is designed to ensure efficient dat
 
 ## Acknowledgements
 
-Thanks to the StarkNet and Voyager API teams for their support and resources.
+Thanks to the **StarkNet** and **Voyager-API** teams for their support and resources.
 
 `https://api.voyager.online/beta/tokens`
+
 `https://api.voyager.online/beta/events`
+
 `https://api.voyager.online/beta/contracts`
+
 `https://api.voyager.online/beta/contracts/{contractAddress}`
+
 `https://api.voyager.online/beta/classes`
+
 `https://api.voyager.online/beta/classes/{classHash}`
+
 `https://api.voyager.online/beta/txns`
+
 `https://api.voyager.online/beta/txns/{txnHash}`
 
+`0x04270219d365d6b017231b52e92b3fb5d7c8378b05e9abc97724537a80e93b0f` - (**AVNU Exchange**) - **Integrated Contract**
 
-## License
-This project is licensed under the MIT License - see the [LICENSE] file for details.
+`0x49d36570d4e46f48e99674bd3fcc84644ddd6b96f7c741b1562b82f9e004dc7` - (**ETH Exchange**) - **Integrated Contract**
+
+`0x053c91253bc9682c04929ca02ed00b3e423f6710d2ee7e0d5ebb06f3ecf368a8` - (**USD Exchange**) - **Integrated Contract**
+
+`0x0454F0BD015E730E5ADBB4F080B075FDBF55654FF41EE336203AA2E1AC4D4309` - (**DMAIL**) - **Integrated Contract**
+
+### Why This Project is the Need of the Hour
+In the rapidly evolving world of blockchain technology, staying ahead requires access to real-time data, predictive insights, and powerful analytics. Our solutions address these needs by providing comprehensive, easy-to-use tools that help both common users and the StarkNet team.
+
+#### Benefits for Common Users:
+- **Informed Decisions**: Real-time data dashboards and predictive trading models enable users to make informed decisions, minimizing risks and maximizing returns.
+- **Enhanced Trading Strategies**: AI-driven predictions help users optimize their trading strategies, providing a competitive edge in the market.
+- **Accessible Data Insights**: Interactive analytics make complex data accessible, allowing users to uncover trends and patterns without requiring deep technical expertise.
+
+#### Benefits for StarkNet Team:
+- **User Engagement**: Enhanced data visualization and interactive tools improve user engagement and satisfaction, driving adoption and retention.
+- **Market Competitiveness**: Offering advanced predictive trading and analytics tools sets StarkNet apart from competitors, attracting more users and projects.
+- **Business Intelligence**: Comprehensive data insights help the StarkNet team understand user behavior, market trends, and network performance, guiding strategic decisions.
+- **Collaboration and Growth**: Advanced analytics and reporting tools facilitate collaboration within the team and with external partners, fostering innovation and growth.
+
+Join us in revolutionizing how data is leveraged on StarkNet, making informed decisions easier than ever before.
+
+
 
