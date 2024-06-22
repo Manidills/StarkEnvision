@@ -37,7 +37,7 @@ action = st.sidebar.radio("What action would you like to take?", ("Dashboards","
 
 response = requests.get("https://www.starknet.io/wp-content/uploads/2024/04/sn_logo_banner.png")
 img = Image.open(io.BytesIO(response.content))
-new_image = img.resize((1800, 400))
+new_image = img.resize((1500, 400))
 
 
 def wallet_con():

@@ -11,7 +11,7 @@ from streamlit_pandas_profiling import st_profile_report
 
 
 def tokens():
-    st.title("Voyager API Data Fetcher")
+    st.title("Tokens Data Fetcher")
 
     
 
