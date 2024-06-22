@@ -43,7 +43,7 @@ The StarkNet Analytics Explorer addresses these challenges by offering:
 
 ## Architecture
 
-![Alt text](https://i.postimg.cc/Jz4sQ7yL/ARCH-new.png)
+![Alt text](https://i.postimg.cc/Z5BSmX2N/ARCH-1.png)
 
 The StarkNet Analytics Explorer architecture is designed to ensure efficient data retrieval, processing, and analysis. Below is a high-level overview of the architecture components:
 - **Data Retrieval Module**: Interacts with the Voyager API to fetch data from various endpoints (excluding the Blocks API).
