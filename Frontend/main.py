@@ -32,7 +32,7 @@ st.set_page_config(
 
 
 st.sidebar.image("https://media1.giphy.com/media/v1.Y2lkPTc5MGI3NjExZDFjb2UzaWFwMnZqZWE1b2N3Yjc5OTltYzdxM2h5YXY2MWd6MXBxbyZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9cw/UAragLbg9oKRfZLThq/giphy.webp")
-action = st.sidebar.radio("What action would you like to take?", ("Dashboards","Predictive_Analysis", "Tokens", "Contracts", "Events", "Transactions", "Classes"))
+action = st.sidebar.radio("What action would you like to take?", ("Dashboards","Predictive_Trading", "Tokens", "Contracts", "Events", "Transactions", "Classes"))
 
 
 response = requests.get("https://www.starknet.io/wp-content/uploads/2024/04/sn_logo_banner.png")
@@ -59,7 +59,7 @@ def wallet_con():
 if action == "Dashboards":
     st.image(new_image)
     dash()
-elif action == "Predictive_Analysis":
+elif action == "Predictive_Trading":
     pred()
 elif action == "Tokens":
     tokens()
